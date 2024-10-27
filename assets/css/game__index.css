@@ -1,0 +1,555 @@
+body{
+    top: 0;
+    background-image: url('../img/wallpaperflare.com_wallpaper\ \(5\).jpg');
+}
+
+body,h1,h2,h3,h4,h5,span,a,p{
+  font-family: 'Montserrat-Regular', sans-serif;
+}
+
+h1{
+  color:#f3c007;
+}
+
+
+.vertical__navbar{
+  background-color: #001826;
+}
+/* Header */
+
+#article__container-top{
+  display: flex;
+  flex-direction: row;
+  padding-top: 1%;
+  /* need change */
+  width: calc(100vh-85px); 
+  align-items: center;
+  min-height: 200px;
+  justify-content: center;
+  float: right;
+  background-color: transparent;
+
+  .article__container-top__container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 85%;
+  }
+  
+  .article__container-top__container img{
+    height: auto;
+    width: 370px;
+  }
+  .article__container-top__container .article__containerNav{
+    display: flex;
+    flex-direction: column;
+    row-gap: 3rem;
+    justify-content: center;
+  }
+  .article__container-top__container .article__containerNav ul{
+    display: flex;
+    flex-direction: row;
+    column-gap: 2rem;
+  }
+  .article__container-top__container .article__containerNav ul li a{
+    font-size: 2.2rem;
+    color: #fff;
+    transition: 1s ease-in;
+  }
+  .article__container-top__container .article__containerNav ul li a:hover{
+    text-decoration: underline;
+  }
+  .user__interface{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30%;
+  }
+  .user__interface .buttons li{
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+  }
+  .user__interface .buttons li button{
+    border: 2px solid white;
+    padding: 10px 25px;
+  border-radius: 3px;
+  color: white;
+  
+}
+.user__interface .buttons li button i{
+  color: white;
+  font-size: 2.2rem;
+}
+.user__interface .buttons li .register__btn{
+  display: flex;
+  column-gap: 5px;
+  color: white;
+  background-color: rgb(209, 8, 8);
+  align-items: center;
+  /* justify-content: center; */
+}
+.user__interface .social__followers{
+  display: flex;
+  flex-direction: row;
+  column-gap: 25px;
+  font-size: 2rem;
+  margin-top: 2.5rem;
+}
+.user__interface .social__followers button{
+  border-radius: 4px;
+  border: 2px solid white;
+  padding: 10px 25px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+.user__interface .social__followers button i{
+  margin-left: 8px;
+  font-size: 3rem;
+  color: red;
+}
+.user__interface .social__followers .following{
+  column-gap: 8px;
+}
+.user__interface .social__followers .donations span{
+  display: block;
+  font-size: 1.5rem;
+}
+.user__interface .social__followers .donations h2{
+  font-size: 2rem;
+}
+.user__interface .social__followers .donations{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.user__interface .social__followers .donations i{
+  margin-left: 10px;
+  font-size: 5rem;
+  color: #eae2d3;
+  transition: .2s ease-in-out;
+}
+.user__interface .social__followers .donations i:hover{
+  color: #efe2ca;
+  font-size: 4.9rem;
+}
+.user__interface button{
+  transition: .4s ease-in-out;
+}
+.user__interface button:hover{
+  filter: brightness(89%);
+}
+
+}
+
+/* Main page */
+
+.main__page{
+    width: calc(100vw - 85px);
+    padding: 2%;
+    position: relative;
+  background: transparent;
+}
+
+.main__page section{
+    /* background-color: red; */
+    background-image: url('../img/wallpaperflare.com_wallpaper\ \(4\).jpg');
+    background-size: cover;
+    padding: 4%;
+}
+
+.main__page .article__container{
+    display: flex;
+    flex-direction: row;
+    column-gap: 5%;
+    justify-content: center;
+}
+.left__container{
+    background-color: yellow;
+    width: 65%;
+    display: inline-block;
+}
+
+.right__container{
+    background-color: rgba(255, 255, 255, 0.623);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(255, 255, 255, 0.063) 0px 30px 60px -30px, rgba(61, 91, 121, 0.35) 0px -2px 6px 0px inset;
+    width: 30%;
+    display: inline-block;
+    /* min-height: 100%; */
+    height: fit-content;
+    padding: .2%;
+}
+
+
+
+
+
+.landing #game__info{
+  height: 100vh;
+}
+.landing #game__info h1{
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.landing #game__info hr{
+  width: 100%;
+  border: 1.5px solid white;
+
+  margin-top: 10px;
+  margin-bottom: 25px;
+} 
+
+.game__video{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+}
+
+.game__video iframe{
+    width: 100%;
+    height: calc(2.3 * 20rem);
+}
+
+/* Doing the cards */
+
+.cards{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    column-gap: 2%;
+    top: 1rem;
+    justify-content: space-around;
+    border-radius: 10px;
+}
+
+.cards ul{
+    width: 47%;
+    height:auto;
+    overflow: visible;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    background-color: #181616;
+    padding: 0%;
+    border-radius: 10px;
+    column-gap: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(255, 255, 255, 0.063) 0px 30px 60px -30px, rgba(61, 91, 121, 0.35) 0px -2px 6px 0px inset;
+  align-items: center;
+}
+
+.cards .details{
+  padding: 1%;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+  margin-top: 6px;
+}
+.cards img{
+    height: 80px;
+    width: auto;
+    max-width: 50px;
+    min-width: 49px;
+    object-fit: cover;
+    position: relative;
+    border-radius: 10px 0 0 10px;
+}
+
+.cards ul h4{
+    font-size: 1.8rem;
+    font-weight:bold;
+    display: block;
+    display: flex;
+    align-items: center;
+}
+
+
+.cards ul h5{
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+
+.cards ul span{
+    display: inline-block;
+    font-size: 2rem;
+    font-weight: 600;
+    color: rgb(236, 206, 14);
+    margin-left: 7px;
+    font-size: 3rem;
+}
+
+.landing .game__about{
+    margin-top: 15px;
+    background-color: #181616;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(255, 255, 255, 0.063) 0px 30px 60px -30px, rgba(61, 91, 121, 0.35) 0px -2px 6px 0px inset;
+    border-radius: 10px;
+    padding: 1.5%;
+}
+
+.landing .game__about p{
+    color: white;
+    letter-spacing: .8px;
+    font-size: 1.9rem;
+    font-weight:lighter;
+}
+
+/* h2 line hr csss */
+
+.divider {
+    display: flex;
+    
+    &:before,
+    &:after {
+      content: "";
+      flex: 1;
+    }
+  }
+.break {
+    overflow: hidden;
+    align-items: center;
+    background: hsl(50, 100%, 50%);
+    color: black;
+    height: 1.5em;
+    line-height: 2em;
+      
+    &:before,
+    &:after {
+      background:rgba(0, 0, 0, 0.932);
+      padding: 50px 0;
+      height: 0;
+      transform: rotate(45deg);
+    }
+  }
+
+
+
+
+
+  /* Ads section */
+
+  .right__container{
+    margin-top: 3%;
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+   padding-top: .4%;
+   border-radius: 10px;
+   row-gap: 10px;
+    
+    .ads__card{
+        width: 98%;
+        display: flex;
+        flex-direction: row;
+        height: 250px;
+        border-radius: 10px;
+    }
+
+    .l{
+        width: 35%  !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: black;
+        border-radius: 10px 0 0 10px;
+    }
+    
+    .l__list{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 2.3rem;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        padding: 5px;
+    }
+    .l__list li img{
+        height: 100px;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+    .l__list li span{
+        background-color: #FFD72A;
+        padding: 5px;
+        border-radius: 20px;
+        color: black;
+        text-align: center;
+        width: 90%;
+    }
+
+
+
+    .r{
+        width: 65% !important;
+        background-color: white;
+        border-radius: 0px 10px 10px 0px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .r__list{
+        width: 100%;
+        padding: 5px;
+        padding-left: 15px;
+        border: none;
+        display: flex;
+        flex-direction: column;
+        row-gap: 15px;
+        align-items: center;
+        justify-content: center;
+    }
+    .r__list p{
+      height: 100px;
+      overflow: hidden;
+    }
+    
+    .r__list .game__icons{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        flex-direction: row;
+        column-gap: 20px;
+        margin-top: 15px;
+    }
+    .r__list .game__icons li{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        transition: .2s ease-in-out;
+    }
+    .r__list .game__icons li:hover{
+        transform: scale(1.1);
+    }
+    .r__list .game__icons li label{
+        font-size: 1.25rem;
+        font-weight: 600;
+    }
+    .r__list .game__icons li a{
+        font-size: 3.5rem;
+    }
+    .r__list h1{
+        color: black;
+        text-align: center;
+    }
+
+  }
+
+
+  /*
+  -----> CONTENTS 
+  */
+
+  .CONTENTS{
+    height: 100vh;
+  }
+  .CONTENTS h1{
+    font-size: 3rem;
+    font-weight: 700;
+  }
+
+  .CONTENTS hr{
+    width: 100%;
+    border: 1.5px solid black;
+    margin-top: 10px;
+  } 
+
+  .CONTENTS .content__cards{
+    padding: 4%;
+  }
+
+  .CONTENTS .content__cards .card__list{
+    display: grid;
+    gap: 13%;
+    justify-items: start;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    margin-bottom: 15%;
+    padding-bottom: 4%;
+    margin-top: 5%;
+  }
+  .CONTENTS .content__cards .card__list img{
+    height: 150px;
+    object-fit: cover;
+    background-color: rgb(33, 32, 32);
+    transition: .4s ease-in-out;
+  }
+  .CONTENTS .content__cards .card__list li div{
+    display: inline-block;
+  }
+  .CONTENTS .content__cards .card__list li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 10px;
+    height: 160px;
+    width: 160px;
+  }
+  .CONTENTS .content__cards .card__list li label{
+    letter-spacing: 2px;
+    font-weight: 700;
+    transition: .4s ease-in-out;
+    width: 80%;
+    text-align: center;
+    padding: 7px;
+    color: #FFD72A;
+  }
+
+  .CONTENTS .content__cards .card__list li:hover label{
+    background-color: #FFD72A;
+    cursor: pointer;
+    margin-top: 3px;
+    color: black;
+  }
+
+  .CONTENTS .content__cards .card__list li:hover img{
+    transform: scale(1.2);
+  }
+
+  /* Highlighted articles */
+
+
+  .Highlighted__Articles{
+    min-height: 100vh;
+    padding-bottom: 32%;
+  }
+  .Highlighted__Articles h1{
+    font-size: 3rem;
+    font-weight: 700;
+  }
+
+  .Highlighted__Articles hr{
+    width: 100%;
+    border: 1.5px solid white;
+    margin-top: 10px;
+  } 
+
+  .Highlighted__Articles .first__section img{
+    height: auto;
+    width: 100%;
+    padding-left: 5%;
+  }
+  .Highlighted__Articles .first__section{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+  }
+  .Highlighted__Articles p{
+    font-size: 1.8rem;
+    color: white;
+    text-align:justify;
+  }
+
+
+  
+
+
+

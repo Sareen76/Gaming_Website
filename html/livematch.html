@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Live Match</title>
+
+        <!-- 
+    - favicon
+  -->
+        <link rel="shortcut icon" href="../favicon.svg" type="image/svg+xml">
+
+        <!-- ion-icon link -->
+        <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" /> -->
+
+        <!-- 
+    - google font link
+  -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Oxanium:wght@600;700;800&family=Poppins:wght@400;500;600;700;800;900&display=swap"
+            rel="stylesheet">
+
+        <!-- Remix icon -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/remixicon@3.7.0/fonts/remixicon.css"
+            rel="stylesheet">
+
+        <!-- Fontswasome -->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+            integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!-- 
+    - custom css link
+  -->
+        <link rel="stylesheet" href="../assets/css/components.css">
+        <link rel="stylesheet" href="../assets/css/index.css">
+        <link rel="stylesheet" href="../assets/css/header_style.css">
+
+        <!-- for the slider -->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+
+        <!-- Red button style -->
+        <style>
+            .button-49,
+    .button-49:after {
+      width: 150px;
+      height: 76px;
+      line-height: 78px;
+      font-size: 2.2rem;
+      font-family: 'Bebas Neue', sans-serif;
+      background: linear-gradient(45deg, transparent 5%, #FFD72A 5%);
+      border: 0;
+      color: black;
+      letter-spacing: 3px;
+      box-shadow: 6px 0px 0px #FF013C;
+      outline: transparent;
+      position: relative;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+      font-weight: 600;
+    }
+    
+    .button-49:after {
+      --slice-0: inset(50% 50% 50% 50%);
+      --slice-1: inset(80% -6px 0 0);
+      --slice-2: inset(50% -6px 30% 0);
+      --slice-3: inset(10% -6px 85% 0);
+      --slice-4: inset(40% -6px 43% 0);
+      --slice-5: inset(80% -6px 5% 0);
+      
+      content: 'ALTERNATE TEXT';
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(45deg, transparent 3%, #00E6F6 3%, #00E6F6 5%, #FF013C 5%);
+      text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #00E6F6;
+      clip-path: var(--slice-0);
+    }
+    
+    .button-49:hover:after {
+      animation: 1s glitch;
+      animation-timing-function: steps(2, end);
+    }
+    
+    @keyframes glitch {
+      0% {
+        clip-path: var(--slice-1);
+        transform: translate(-20px, -10px);
+      }
+      10% {
+        clip-path: var(--slice-3);
+        transform: translate(10px, 10px);
+      }
+      20% {
+        clip-path: var(--slice-1);
+        transform: translate(-10px, 10px);
+      }
+      30% {
+        clip-path: var(--slice-3);
+        transform: translate(0px, 5px);
+      }
+      40% {
+        clip-path: var(--slice-2);
+        transform: translate(-5px, 0px);
+      }
+      50% {
+        clip-path: var(--slice-3);
+        transform: translate(5px, 0px);
+      }
+      60% {
+        clip-path: var(--slice-4);
+        transform: translate(5px, 10px);
+      }
+      70% {
+        clip-path: var(--slice-2);
+        transform: translate(-10px, 10px);
+      }
+      80% {
+        clip-path: var(--slice-5);
+        transform: translate(20px, -10px);
+      }
+      90% {
+        clip-path: var(--slice-1);
+        transform: translate(-10px, 0px);
+      }
+      100% {
+        clip-path: var(--slice-1);
+        transform: translate(0);
+      }
+    }
+    
+    @media (min-width: 768px) {
+      .button-49,
+      .button-49:after {
+        width: 200px;
+        height: 86px;
+        line-height: 88px;
+      }
+    }
+        </style>
+
+        <!--===============================================================================================-->
+        <link rel="icon" type="image/png" href="images/icons/favicon.ico" />
+        <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css"
+            href="vendor/bootstrap/css/bootstrap.min.css">
+        <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css"
+            href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+        <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css"
+            href="vendor/animate/animate.css">
+        <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css"
+            href="vendor/css-hamburgers/hamburgers.min.css">
+        <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css"
+            href="vendor/select2/select2.min.css">
+        <!--===============================================================================================-->
+        <!-- <link rel="stylesheet" type="text/css" href="../assets/css/util.css"> -->
+        <link rel="stylesheet" type="text/css" href="../assets/css/contact.css">
+        <!--===============================================================================================-->
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100;300;500&family=Montserrat:wght@100;200;300;400;500;600;700&family=Rubik:wght@300;400;500;600&display=swap"
+            rel="stylesheet">
+
+    </head>
+<body>
+     <!-- 
+          - #LIVE MATCH
+        -->
+
+        <section class="section live-match" id="live" aria-label="live match">
+            <div class="container">
+  
+              <h2 class="h2 section-title">
+                Watch Live <span class="span">Match</span>
+              </h2>
+  
+              <figure class="live-match-banner img-holder" style="--width: 800; --height: 470;">
+  
+                <img src="./assets/images/live-match-banner.jpg" width="800" height="470" loading="lazy"
+                  alt="Live Match Video" class="img-cover">
+  
+                <button class="play-btn" aria-label="play video">
+                  <ion-icon name="play"></ion-icon>
+                </button>
+  
+              </figure>
+  
+              <div class="live-match-player">
+  
+                <figure class="player player-1 img-holder" style="--width: 406; --height: 277;">
+                  <img src="./assets/images/live-match-player-1.png" width="406" height="277" loading="lazy"
+                    alt="tokyo eagle" class="w-100">
+                </figure>
+  
+                <div class="live-match-detail">
+  
+                  <p class="live-match-subtitle">Upcoming Live Matches</p>
+  
+                  <time class="live-match-time" datetime="08:30">08:30</time>
+  
+                </div>
+  
+                <figure class="player player-2 img-holder" style="--width: 400; --height: 305;">
+                  <img src="./assets/images/live-match-player-2.png" width="400" height="305" loading="lazy"
+                    alt="new york hunter7" class="w-100">
+                </figure>
+  
+              </div>
+  
+            </div>
+          </section>
+  
+        </div>
+  
+  
+</body>
+</html>
